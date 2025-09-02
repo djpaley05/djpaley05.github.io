@@ -1,1 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <meta name="description" content="Short site description.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌐%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #666666;
+      --accent: #0a84ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0a0a0a; --fg: #eaeaea; --muted: #a1a1a1; --accent: #64b5ff; }
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    .container { max-width: 720px; margin: 6rem auto; padding: 0 1.25rem; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 .25rem 0; }
+    h2 { margin: 0 0 .5rem 0; }
+    p { margin: .25rem 0 1rem; }
+    a { color: var(--fg); text-underline-offset: 2px; }
+    a:hover { color: var(--accent); }
+    nav { margin-top: 1rem; }
+    nav a { margin-right: 1rem; text-decoration: none; color: var(--muted); }
+    nav a:hover { color: var(--accent); text-decoration: underline; }
+    section { margin-top: 2.5rem; }
+    .card { padding: 1rem; border: 1px solid rgba(127,127,127,.2); border-radius: 14px; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Your Name</h1>
+    <p>Short one line tagline about you or the site.</p>
 
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>Replace this with 3 to 4 sentences about who you are and what the site is for. Keep it concise.</p>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <ul>
+        <li><strong>Project 1</strong> – one sentence description. <a href="#">Link</a></li>
+        <li><strong>Project 2</strong> – one sentence description. <a href="#">Link</a></li>
+      </ul>
+    </section>
+
+    <section id="writing">
+      <h2>Writing</h2>
+      <ul>
+        <li><a href="#">Post title</a> · Jan 1, 2025</li>
+        <li><a href="#">Another post</a> · Dec 10, 2024</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn · Twitter · GitHub</p>
+    </section>
+
+    <footer>© <span id="year"></span> Your Name</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
