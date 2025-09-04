@@ -6,35 +6,29 @@
   <title>Investments - Your Name</title>
   <meta name="description" content="Investments by Your Name.">
   <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #111111;
-      --muted: #666666;
-      --accent: #0a84ff;
+    :root { --bg:#ffffff; --fg:#111111; --muted:#666666; --accent:#0a84ff; }
+    @media (prefers-color-scheme: dark){
+      :root { --bg:#0a0a0a; --fg:#eaeaea; --muted:#a1a1a1; --accent:#64b5ff; }
     }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #0a0a0a; --fg: #eaeaea; --muted: #a1a1a1; --accent: #64b5ff; }
-    }
-    body {
-      margin: 0; background: var(--bg); color: var(--fg);
-      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    }
-    .container { max-width: 900px; margin: 3rem auto; padding: 0 1.25rem; }
-    h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
-    table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
-    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.1); }
-    th { font-weight: 600; color: var(--fg); border-bottom: 2px solid rgba(0,0,0,0.2); }
-    tr:hover { background: rgba(0,0,0,0.03); }
-    .highlight { color: var(--accent); font-weight: 600; }
-    footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body{ margin:0; background:var(--bg); color:var(--fg);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+    .container{ max-width:900px; margin:3rem auto; padding:0 1.25rem;}
+    h1{ font-size:clamp(2rem,4vw,3rem); margin-bottom:1rem;}
+    p{ margin:.5rem 0 1rem;}
+    table{ width:100%; border-collapse:collapse; margin-top:1rem;}
+    th,td{ padding:.75rem 1rem; text-align:left; border-bottom:1px solid rgba(0,0,0,.1);}
+    th{ font-weight:600; border-bottom:2px solid rgba(0,0,0,.2);}
+    tr:hover{ background:rgba(0,0,0,.03); }
+    .highlight a{ color:var(--accent); font-weight:600; text-decoration:none; }
+    .highlight a:hover{ text-decoration:underline; }
+    footer{ margin-top:3rem; color:var(--muted); font-size:.9rem;}
+    a{ color:var(--accent); }
   </style>
 </head>
 <body>
   <main class="container">
     <h1>Investments</h1>
-    <p>My investments are listed below in reverse chronological order, with the most recent at the top.</p>
+    <p>Listed in reverse chronological order.</p>
 
     <table>
       <thead>
@@ -46,42 +40,112 @@
         </tr>
       </thead>
       <tbody>
-     <tr>
-    <td class="highlight"><a href="https://www.munify.ai/" target="_blank">Munify</a></td>
-    <td>Seed</td>
-    <td>Seed</td>
-    <td>Fintech</td>
-  </tr>
-        <tr>
-          <td class="highlight"><a href="https://diraq.com/" target="_blank">Diraq</a></td>
-          <td>Series A</td>
-          <td>Series A</td>
-          <td>Quantum</td>
+
+        <!-- 2025 Jul -->
+                <tr>
+          <td class="highlight"><a href="https://www.munify.ai/">Munify</a></td>
+          <td>Seed</td><td>Seed</td><td>Fintech</td>
         </tr>
         <tr>
-          <td class="highlight"><a href="https://hextronics.com/" target="_blank">Hextronics</a></td>
-          <td>Seed</td>
-          <td>Seed</td>
-          <td>Aerospace</td>
+          <td class="highlight"><a href="https://hextronics.com/" >Hextronics</a></td>
+          <td>Seed</td><td>Seed</td><td>Aerospace</td>
+        </tr>
+
+        <!-- 2025 Jun -->
+        <tr>
+          <td class="highlight"><a href="https://diraq.com/">Diraq</a></td>
+          <td>Series A</td><td>Series A</td><td>Quantum</td>
         </tr>
         <tr>
-          <td>Balanced</td>
-          <td>Seed</td>
-          <td>Shut down</td>
-          <td>Health</td>
+          <td class="highlight"><a href="https://valuemate.ai/">ValueMate</a></td>
+          <td>Seed</td><td>Seed</td><td>PropTech AI</td>
         </tr>
         <tr>
-          <td class="highlight">Stenon</td>
-          <td>Series A</td>
-          <td>Series A</td>
-          <td>AgTech</td>
+          <td class="highlight"><a href="https://www.linkedin.com/company/caucus-gov/">Caucus</a></td>
+          <td>Seed</td><td>Seed</td><td>GovTech CRM</td>
         </tr>
         <tr>
-          <td>Nucleus</td>
-          <td>Seed</td>
-          <td>Series A</td>
-          <td>B2C Fintech</td>
+          <td class="highlight"><a href="https://www.linkedin.com/company/sygaldry/">Sygaldry</a></td>
+          <td>Seed</td><td>Seed</td><td>Developer Tools</td>
         </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/theta-software/">Theta Software</a></td>
+          <td>Seed</td><td>Seed</td><td>Software</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/trycosmos/">Cosmos</a></td>
+          <td>Pre-seed</td><td>Seed</td><td>AI</td>
+        </tr>
+
+        <!-- 2025 Mar -->
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/orbital-operations/">Orbital Operations</a></td>
+          <td>Seed</td><td>Seed</td><td>Space</td>
+        </tr>
+
+        <!-- 2024 Dec -->
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/abel-health/">Abel</a></td>
+          <td>Seed</td><td>Seed</td><td>Health Tech</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/studydojo/">StudyDojo</a></td>
+          <td>Seed</td><td>Seed</td><td>EdTech</td>
+        </tr>
+
+        <!-- 2024 Nov -->
+        <tr>
+          <td class="highlight"><a href="https://www.astroforge.io/">AstroForge</a></td>
+          <td>Series A</td><td>Series A</td><td>Space</td>
+        </tr>
+
+        <!-- 2024 Oct -->
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/artisan-ai/">Artisan</a></td>
+          <td>Seed</td><td>Seed</td><td>AI Agents</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/finosu/">Finosu</a></td>
+          <td>Seed</td><td>Seed</td><td>Fintech</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/azalea-robotics/">Azalea Robotics</a></td>
+          <td>Seed</td><td>Seed</td><td>Robotics</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/overlap-ai/">Overlap</a></td>
+          <td>Seed</td><td>Seed</td><td>AI Productivity</td>
+        </tr>
+
+        <!-- 2024 Sept -->
+        <tr>
+          <td class="highlight"><a href="https://www.beyond-aero.com/">Beyond Aero</a></td>
+          <td>Series A</td><td>Series A</td><td>Aerospace</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.linkedin.com/company/dugu-ai/">Dugu</a></td>
+          <td>Seed</td><td>Seed</td><td>AI</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.bluumbio.com/">BluumBio</a></td>
+          <td>Seed</td><td>Seed</td><td>Climate Bio</td>
+        </tr>
+
+        <!-- 2024 Jul -->
+        <tr>
+          <td class="highlight"><a href="https://www.inversionspace.com/">Inversion Space</a></td>
+          <td>Series A</td><td>Series A</td><td>Space</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.algabiosciences.com/">Alga Biosciences</a></td>
+          <td>Seed</td><td>Seed</td><td>Climate Bio</td>
+        </tr>
+        <tr>
+          <td class="highlight"><a href="https://www.atlascard.com/">Atlas</a></td>
+          <td>Series A</td><td>Series A</td><td>Fintech</td>
+        </tr>
+        </tr>
+
       </tbody>
     </table>
 
@@ -90,9 +154,6 @@
       <p>© <span id="year"></span> Your Name</p>
     </footer>
   </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
