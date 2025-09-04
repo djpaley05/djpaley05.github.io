@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investments - Your Name</title>
+  <meta name="description" content="Investments by Your Name.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #666666;
+      --accent: #0a84ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0a0a0a; --fg: #eaeaea; --muted: #a1a1a1; --accent: #64b5ff; }
+    }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    .container { max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+    h2 { margin: 2rem 0 .75rem 0; }
+    p { margin: .5rem 0 1rem; }
+    a { color: var(--fg); text-underline-offset: 2px; }
+    a:hover { color: var(--accent); }
+    ul { padding-left: 1.2rem; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Investments</h1>
+    <p>Here is a selection of my investments. Replace this text with a short intro if you’d like.</p>
+
+    <section>
+      <ul>
+        <li><strong>Company 1</strong> – short description. <a href="#">Website</a></li>
+        <li><strong>Company 2</strong> – short description. <a href="#">Website</a></li>
+        <li><strong>Company 3</strong> – short description. <a href="#">Website</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p><a href="index.html">← Back to home</a></p>
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
