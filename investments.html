@@ -19,28 +19,71 @@
       margin: 0; background: var(--bg); color: var(--fg);
       font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
     }
-    .container { max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; }
+    .container { max-width: 900px; margin: 3rem auto; padding: 0 1.25rem; }
     h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
-    h2 { margin: 2rem 0 .75rem 0; }
-    p { margin: .5rem 0 1rem; }
-    a { color: var(--fg); text-underline-offset: 2px; }
-    a:hover { color: var(--accent); }
-    ul { padding-left: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.1); }
+    th { font-weight: 600; color: var(--fg); border-bottom: 2px solid rgba(0,0,0,0.2); }
+    tr:hover { background: rgba(0,0,0,0.03); }
+    .highlight { color: var(--accent); font-weight: 600; }
     footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <main class="container">
     <h1>Investments</h1>
-    <p>Here is a selection of my investments. Replace this text with a short intro if you’d like.</p>
+    <p>My investments are listed below in reverse chronological order, with the most recent at the top.</p>
 
-    <section>
-      <ul>
-        <li><strong>Company 1</strong> – short description. <a href="#">Website</a></li>
-        <li><strong>Company 2</strong> – short description. <a href="#">Website</a></li>
-        <li><strong>Company 3</strong> – short description. <a href="#">Website</a></li>
-      </ul>
-    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Company Name</th>
+          <th>Stage Invested</th>
+          <th>Current Status</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="highlight">Northwood</td>
+          <td>Seed</td>
+          <td>Seed</td>
+          <td>Fintech</td>
+        </tr>
+        <tr>
+          <td class="highlight">Senra</td>
+          <td>Seed</td>
+          <td>Seed</td>
+          <td>Climate</td>
+        </tr>
+        <tr>
+          <td class="highlight">Swarm Aero</td>
+          <td>Seed</td>
+          <td>Seed</td>
+          <td>Aerospace</td>
+        </tr>
+        <tr>
+          <td>Balanced</td>
+          <td>Seed</td>
+          <td>Shut down</td>
+          <td>Health</td>
+        </tr>
+        <tr>
+          <td class="highlight">Stenon</td>
+          <td>Series A</td>
+          <td>Series A</td>
+          <td>AgTech</td>
+        </tr>
+        <tr>
+          <td>Nucleus</td>
+          <td>Seed</td>
+          <td>Series A</td>
+          <td>B2C Fintech</td>
+        </tr>
+      </tbody>
+    </table>
 
     <footer>
       <p><a href="index.html">← Back to home</a></p>
