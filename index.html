@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <script defer src="/_vercel/insights/script.js"></script>
+  <script>
+    if (window.location.pathname === '/index.html') {
+      window.location.replace('/');
+    }
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daniel Paley</title>
@@ -54,9 +59,5 @@ body {
 </section>
 
  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
