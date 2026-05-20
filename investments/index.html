@@ -1,25 +1,24 @@
 <!doctype html>
-<!-- redeploy -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Investments | Daniel Paley</title>
-  <meta name="description" content="Angel investments by Daniel Paley across early-stage startups.">
+  <meta name="description" content="Selected angel investments by Daniel Paley.">
 
   <meta property="og:title" content="Investments | Daniel Paley">
-  <meta property="og:description" content="Angel investments by Daniel Paley across early-stage startups.">
+  <meta property="og:description" content="Selected angel investments by Daniel Paley.">
   <meta property="og:url" content="https://danpaley.io/investments">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Investments | Daniel Paley">
-  <meta name="twitter:description" content="Angel investments by Daniel Paley across early-stage startups.">
-<link rel="icon" type="image/png" href="/favicon.png?v=6">
+  <meta name="twitter:description" content="Selected angel investments by Daniel Paley.">
+  <link rel="icon" type="image/png" href="/favicon.png?v=6">
   <style>
-    :root { --bg:#ffffff; --fg:#111111; --muted:#666666; --accent:#0a84ff; }
+    :root { --bg:#ffffff; --fg:#111111; --muted:#666666; --accent:#0a84ff; --border:rgba(0,0,0,.08); }
     @media (prefers-color-scheme: dark){
-      :root { --bg:#0a0a0a; --fg:#eaeaea; --muted:#a1a1a1; --accent:#64b5ff; }
+      :root { --bg:#0a0a0a; --fg:#eaeaea; --muted:#a1a1a1; --accent:#64b5ff; --border:rgba(255,255,255,.1); }
     }
     body{
       margin:0;
@@ -28,131 +27,94 @@
       font:16px/1.6 "Times New Roman", Times, serif;
     }
     .container{ max-width:900px; margin:3rem auto; padding:0 1.25rem; }
-    h1{ font-size:clamp(2rem,4vw,3rem); margin-bottom:1rem; }
-    p{ margin:.5rem 0 1rem; }
-    table{ width:100%; border-collapse:collapse; margin-top:1rem; }
-    th,td{ padding:.75rem 1rem; text-align:left; border-bottom:1px solid rgba(0,0,0,.1); }
-    th{ font-weight:600; border-bottom:2px solid rgba(0,0,0,.2); }
-    tr:hover{ background:rgba(0,0,0,.03); }
-    .highlight a{ color:var(--accent); font-weight:600; text-decoration:none; }
-    .highlight a:hover{ text-decoration:underline; }
-    footer{ margin-top:3rem; color:var(--muted); font-size:.9rem; }
-    a{ color:var(--accent); }
+    h1{ font-size:clamp(2rem,4vw,3rem); margin-bottom:.5rem; }
+    .lede{ color:var(--muted); margin:0 0 2.5rem; }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:2rem 1.5rem;
+      margin-top:2rem;
+    }
+    @media (max-width: 640px){
+      .grid{ grid-template-columns:repeat(2, 1fr); gap:1.75rem 1rem; }
+    }
+
+    .company{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      text-decoration:none;
+      color:inherit;
+      padding:1.5rem 1rem;
+      border:1px solid var(--border);
+      border-radius:8px;
+      transition:border-color .15s ease, transform .15s ease;
+    }
+    .company:hover{
+      border-color:var(--accent);
+      transform:translateY(-2px);
+    }
+    .logo{
+      height:64px;
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:1rem;
+    }
+    .logo img{
+      max-height:100%;
+      max-width:100%;
+      object-fit:contain;
+    }
+    .name{
+      font-size:1rem;
+      font-weight:600;
+      text-align:center;
+    }
+
+    footer{ margin-top:4rem; color:var(--muted); font-size:.9rem; }
+    footer a{ color:var(--accent); }
   </style>
 </head>
 <body>
   <main class="container">
     <h1>Portfolio</h1>
-    <p>Listed in reverse chronological order.</p>
+    <p class="lede">Selected investments.</p>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Company Name</th>
-          <th>Stage Invested</th>
-          <th>Current Stage</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="highlight"><a href="https://www.flyatlas.ai/">Atlas</a></td>
-          <td>Pre-Seed</td><td>Pre-Seed</td><td>B2B</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://delphimarkets.com/">Delphi</a></td>
-          <td>Pre-Seed</td><td>Pre-Seed</td><td>Fintech</td>
-        </tr>
-           <tr>
-          <td class="highlight"><a href="https://modalic.com/">Modalic</a></td>
-          <td>Seed</td><td>Seed</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.zavopay.com/">Zavo Pay</a></td>
-          <td>Seed</td><td>Seed</td><td>Fintech</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://wardstone.space/">Wardstone</a></td>
-          <td>Seed</td><td>Seed</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.eldil.ai/">Eldil</a></td>
-          <td>Pre-Seed</td><td>Pre-seed</td><td>B2B</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://tex.pro/">Tex Software</a></td>
-          <td>Pre-Seed</td><td>Pre-seed</td><td>B2B</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.munify.ai/">Munify</a></td>
-          <td>Seed</td><td>Seed</td><td>Fintech</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://hex.us/">Hex</a></td>
-          <td>Seed</td><td>Seed</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://diraq.com/">Diraq</a></td>
-          <td>Series A</td><td>Series A</td><td>Quantum</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://valuemate.ai/">ValueMate</a></td>
-          <td>Seed</td><td>Seed</td><td>PropTech</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://sygaldry.com/">Sygaldry</a></td>
-          <td>Seed</td><td>Seed</td><td>Quantum</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://thetasoftware.ai/">Theta Software</a></td>
-          <td>Seed</td><td>Seed</td><td>B2B</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.orbitalops.tech/">Orbital Operations</a></td>
-          <td>Seed</td><td>Seed</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://abelpolice.com/">Abel Police</a></td>
-          <td>Seed</td><td>Seed</td><td>GovTech</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.revisiondojo.com/">RevisionDojo</a></td>
-          <td>Seed</td><td>Seed</td><td>EdTech</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.astroforge.io/">AstroForge</a></td>
-          <td>Series A</td><td>Series A</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.artisan.co/">Artisan AI</a></td>
-          <td>Seed</td><td>Series A</td><td>B2B</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.finosu.com/">Finosu</a></td>
-          <td>Seed</td><td>Seed</td><td>Fintech</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.azalearobotics.com/">Azalea Robotics</a></td>
-          <td>Seed</td><td>Seed</td><td>Robotics</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://overlap.ai/">Overlap</a></td>
-          <td>Seed</td><td>Seed</td><td>B2B</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.beyond-aero.com/">Beyond Aero</a></td>
-          <td>Series A</td><td>Series A</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.inversionspace.com/">Inversion Space</a></td>
-          <td>Series A</td><td>Series A</td><td>Aerospace</td>
-        </tr>
-        <tr>
-          <td class="highlight"><a href="https://www.atlascard.com/">Atlas</a></td>
-          <td>Series A</td><td>Series B</td><td>Fintech</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="grid">
+      <a class="company" href="https://diraq.com/" target="_blank" rel="noopener">
+        <div class="logo"><img src="/investments/logos/diraq.png" alt="Diraq logo"></div>
+        <div class="name">Diraq</div>
+      </a>
+
+      <a class="company" href="https://www.atlascard.com/" target="_blank" rel="noopener">
+        <div class="logo"><img src="/investments/logos/atlas-card.png" alt="Atlas Card logo"></div>
+        <div class="name">Atlas Card</div>
+      </a>
+
+      <a class="company" href="https://www.inversionspace.com/" target="_blank" rel="noopener">
+        <div class="logo"><img src="/investments/logos/inversion.png" alt="Inversion Space logo"></div>
+        <div class="name">Inversion Space</div>
+      </a>
+
+      <a class="company" href="https://sygaldry.com/" target="_blank" rel="noopener">
+        <div class="logo"><img src="/investments/logos/sygaldry.png" alt="Sygaldry logo"></div>
+        <div class="name">Sygaldry</div>
+      </a>
+
+      <a class="company" href="https://www.orbitalops.tech/" target="_blank" rel="noopener">
+        <div class="logo"><img src="/investments/logos/orbital-operations.png" alt="Orbital Operations logo"></div>
+        <div class="name">Orbital Operations</div>
+      </a>
+
+      <a class="company" href="https://www.astroforge.io/" target="_blank" rel="noopener">
+        <div class="logo"><img src="/investments/logos/astroforge.png" alt="AstroForge logo"></div>
+        <div class="name">AstroForge</div>
+      </a>
+    </div>
 
     <footer>
       <p><a href="/">← Back to home</a></p>
