@@ -16,9 +16,9 @@
   <meta name="twitter:description" content="Selected angel investments by Daniel Paley.">
   <link rel="icon" type="image/png" href="/favicon.png?v=6">
   <style>
-    :root { --bg:#ffffff; --fg:#111111; --muted:#666666; --accent:#0a84ff; --border:rgba(0,0,0,.08); }
+    :root { --bg:#ffffff; --fg:#111111; --muted:#666666; --accent:#0a84ff; }
     @media (prefers-color-scheme: dark){
-      :root { --bg:#0a0a0a; --fg:#eaeaea; --muted:#a1a1a1; --accent:#64b5ff; --border:rgba(255,255,255,.1); }
+      :root { --bg:#0a0a0a; --fg:#eaeaea; --muted:#a1a1a1; --accent:#64b5ff; }
     }
     body{
       margin:0;
@@ -26,56 +26,35 @@
       color:var(--fg);
       font:16px/1.6 "Times New Roman", Times, serif;
     }
-    .container{ max-width:900px; margin:3rem auto; padding:0 1.25rem; }
+    .container{ max-width:700px; margin:3rem auto; padding:0 1.25rem; }
     h1{ font-size:clamp(2rem,4vw,3rem); margin-bottom:.5rem; }
     .lede{ color:var(--muted); margin:0 0 2.5rem; }
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:2rem 1.5rem;
-      margin-top:2rem;
+    .list{ list-style:none; padding:0; margin:0; }
+    .list li{
+      padding:1.25rem 0;
+      border-bottom:1px solid rgba(0,0,0,.08);
     }
-    @media (max-width: 640px){
-      .grid{ grid-template-columns:repeat(2, 1fr); gap:1.75rem 1rem; }
+    @media (prefers-color-scheme: dark){
+      .list li{ border-bottom:1px solid rgba(255,255,255,.08); }
     }
+    .list li:last-child{ border-bottom:none; }
 
-    .company{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:flex-start;
-      text-decoration:none;
-      color:inherit;
-      padding:1.5rem 1rem;
-      border:1px solid var(--border);
-      border-radius:8px;
-      transition:border-color .15s ease, transform .15s ease;
-    }
-    .company:hover{
-      border-color:var(--accent);
-      transform:translateY(-2px);
-    }
-    .logo{
-      height:64px;
-      width:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin-bottom:1rem;
-    }
-    .logo img{
-      max-height:100%;
-      max-width:100%;
-      object-fit:contain;
-    }
     .name{
-      font-size:1rem;
+      font-size:1.15rem;
       font-weight:600;
-      text-align:center;
+      text-decoration:none;
+      color:var(--accent);
+    }
+    .name:hover{ text-decoration:underline; }
+
+    .desc{
+      color:var(--muted);
+      margin-top:.25rem;
+      font-size:1rem;
     }
 
-    footer{ margin-top:4rem; color:var(--muted); font-size:.9rem; }
+    footer{ margin-top:3rem; color:var(--muted); font-size:.9rem; }
     footer a{ color:var(--accent); }
   </style>
 </head>
@@ -84,37 +63,32 @@
     <h1>Portfolio</h1>
     <p class="lede">Selected investments.</p>
 
-    <div class="grid">
-      <a class="company" href="https://diraq.com/" target="_blank" rel="noopener">
-        <div class="logo"><img src="/investments/diraq.png" alt="Diraq logo"></div>
-        <div class="name">Diraq</div>
-      </a>
-
-      <a class="company" href="https://www.atlascard.com/" target="_blank" rel="noopener">
-        <div class="logo"><img src="/investments/logos/atlas-card.png" alt="Atlas Card logo"></div>
-        <div class="name">Atlas Card</div>
-      </a>
-
-      <a class="company" href="https://www.inversionspace.com/" target="_blank" rel="noopener">
-        <div class="logo"><img src="/investments/logos/inversion.png" alt="Inversion Space logo"></div>
-        <div class="name">Inversion Space</div>
-      </a>
-
-      <a class="company" href="https://sygaldry.com/" target="_blank" rel="noopener">
-        <div class="logo"><img src="/investments/logos/sygaldry.png" alt="Sygaldry logo"></div>
-        <div class="name">Sygaldry</div>
-      </a>
-
-      <a class="company" href="https://www.orbitalops.tech/" target="_blank" rel="noopener">
-        <div class="logo"><img src="/investments/logos/orbital-operations.png" alt="Orbital Operations logo"></div>
-        <div class="name">Orbital Operations</div>
-      </a>
-
-      <a class="company" href="https://www.astroforge.io/" target="_blank" rel="noopener">
-        <div class="logo"><img src="/investments/logos/astroforge.png" alt="AstroForge logo"></div>
-        <div class="name">AstroForge</div>
-      </a>
-    </div>
+    <ul class="list">
+      <li>
+        <a class="name" href="https://diraq.com/" target="_blank" rel="noopener">Diraq</a>
+        <div class="desc">Silicon-spin quantum computing.</div>
+      </li>
+      <li>
+        <a class="name" href="https://www.atlascard.com/" target="_blank" rel="noopener">Atlas Card</a>
+        <div class="desc">Premium charge card.</div>
+      </li>
+      <li>
+        <a class="name" href="https://www.inversionspace.com/" target="_blank" rel="noopener">Inversion Space</a>
+        <div class="desc">Re-entry vehicles.</div>
+      </li>
+      <li>
+        <a class="name" href="https://sygaldry.com/" target="_blank" rel="noopener">Sygaldry</a>
+        <div class="desc">Quantum-accelerated AI.</div>
+      </li>
+      <li>
+        <a class="name" href="https://www.orbitalops.tech/" target="_blank" rel="noopener">Orbital Operations</a>
+        <div class="desc">In-space propulsion.</div>
+      </li>
+      <li>
+        <a class="name" href="https://www.astroforge.io/" target="_blank" rel="noopener">AstroForge</a>
+        <div class="desc">Asteroid mining and deep-space exploration.</div>
+      </li>
+    </ul>
 
     <footer>
       <p><a href="/">← Back to home</a></p>
